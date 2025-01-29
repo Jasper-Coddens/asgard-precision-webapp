@@ -23,21 +23,24 @@ export default function Home() {
   };
   return (
     <div>
-      <video className="center" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
+      <div className="flex items-center">
+      <video className="mx-auto" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
         <source src="/video/Welcome_to_Noxus.mp4" type="video/mp4"/>
       </video>
       <img 
       id="playButton" alt="play button" src="/image/next-button-svgrepo-com.svg" 
       onClick={togglePlay}
-      className="opacity-50"
+      className="opacity-60"
       style={{
         display: showPlayButton ? "block" : "none",
         position: "absolute",
+        justifySelf: "anchor-center",
         cursor: "pointer",
         width: "50px",
         height: "50px",
       }}
       />
+      </div>
       <div className="content">
         <h2>Heading</h2>
           <p>Lorem ipsum...</p>
