@@ -5,7 +5,6 @@ import { useRef, useState } from "react";
 export default function Home() {
 
   const videoElement = useRef<HTMLVideoElement | null>(null);
-  const playbutton = document.getElementById("playButton");
   const [showPlayButton, setShowPlayButton] = useState(false);
 
   
