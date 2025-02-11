@@ -7,7 +7,8 @@ module.exports = {
     colors: {
       'asgard-blue': '#1c2a5b' ,
       'asgard-red': '#9d1320',
-      'asgard-gray': '#5e5f61'
+      'asgard-gray': '#5e5f61',
+      'black': '#000'
     },
     extend: {},
   },

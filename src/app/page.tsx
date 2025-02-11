@@ -1,12 +1,12 @@
 "use client"
 
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
+import InstagramEmbed from "@/compontents/instaEmbed";
 
 export default function Home() {
 
   const videoElement = useRef<HTMLVideoElement | null>(null);
   const [showPlayButton, setShowPlayButton] = useState(false);
-
   
   const togglePlay = () => {
     const video = videoElement.current;
@@ -20,9 +20,10 @@ export default function Home() {
       }
     }
   };
+
   return (
     <div>
-      <div className="flex items-center">
+      <div className="flex items-center bg-black">
       <video className="mx-auto" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
         <source src="/video/Welcome_to_Noxus.mp4" type="video/mp4"/>
       </video>
@@ -39,6 +40,9 @@ export default function Home() {
         height: "50px",
       }}
       />
+      </div>
+      <div className="m-4">
+      <InstagramEmbed/>
       </div>
       <div className="content">
         <h2>Heading</h2>
