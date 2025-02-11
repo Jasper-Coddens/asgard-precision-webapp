@@ -18,7 +18,7 @@ const InstagramEmbed = () => {
     }, []);
 
     return (
-        <div>
+        <div className="min-w-[840px]">
         <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/jasper_coddens"
@@ -29,7 +29,7 @@ const InstagramEmbed = () => {
           borderRadius: "3px",
           boxShadow: "0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15)",
           margin: "1px",
-          maxWidth: "540px",
+          maxWidth: "840px",
           minWidth: "326px",
           padding: 0,
           width: "99.375%",

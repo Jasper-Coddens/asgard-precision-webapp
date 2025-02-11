@@ -5,10 +5,10 @@ const Navbar = () => {
 <nav>
   <div className="flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-      <img src="/image/asgard_logo.png" className="ml-12 h-20" alt="Asgard Precision Logo" />
+      <img src="/image/asgard_logo.png" className="ml-4 h-20" alt="Asgard Precision Logo" />
     </a>
     <div className="hidden w-full md:block md:w-auto">
-      <ul className="text-xl font-medium flex flex-col p-4 md:p-0 mt-4 mr-12 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+      <ul className="text-xl font-medium flex flex-col p-4 md:p-0 mt-4 mr-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
         <li>
           <a href="/" className="block py-2 px-3 text-white rounded-sm md:bg-transparent md:hover:text-asgard-blue md:p-0 transition duration-300">HOME</a>
         </li>
