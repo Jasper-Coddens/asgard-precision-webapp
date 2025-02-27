@@ -1,6 +1,5 @@
 "use client"
 
-
 import { useEffect } from "react";
 
 const InstagramEmbed = () => {
@@ -18,7 +17,7 @@ const InstagramEmbed = () => {
     }, []);
 
     return (
-        <div className="min-w-[840px]">
+        <div className="min-w-[640px]">
         <blockquote
         className="instagram-media"
         data-instgrm-permalink="https://www.instagram.com/jasper_coddens"
