@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <div>
       <div className="flex items-center bg-black">
-      <video className="mx-auto min-h-[1000px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
-        <source src="/video/Welcome_to_Noxus.mp4" type="video/mp4"/>
+      <video className="mx-auto min-h-[720px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
+        <source src="/video/Battlefield_4_Trailer.mp4" type="video/mp4"/>
       </video>
       <img 
       id="playButton" alt="play button" src="/image/next-button-svgrepo-com.svg" 

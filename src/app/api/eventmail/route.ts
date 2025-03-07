@@ -3,7 +3,7 @@ import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
 export async function POST(request: NextRequest) {
-  const { email, name, message } = await request.json();
+  const { email, name } = await request.json();
 
   const transport = nodemailer.createTransport({
     service: 'gmail',
@@ -18,8 +18,8 @@ export async function POST(request: NextRequest) {
     from: process.env.MY_EMAIL,
     to: process.env.MY_EMAIL,
     cc: email,
-    subject: `Message from ${name} (${email})`,
-    text: `${name} wants to participate in the following event: "event" ${message}`,
+    subject: `${email} wants to participate in an event`,
+    text: `${name} wants to participate in the following event: "event"`,
   };
 
   const sendMailPromise = () =>
