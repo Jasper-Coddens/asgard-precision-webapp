@@ -1,5 +1,3 @@
-//WIP need to adjust for event
-
 import { FormData } from '@/app/event/page';
 
 export function sendEvent(data: FormData) {
