@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "../compontents/navbar";
+import Footer from "../compontents/footer";
 
 export const metadata: Metadata = {
   title: "Asgard Precision",
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body>
         <Navbar />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

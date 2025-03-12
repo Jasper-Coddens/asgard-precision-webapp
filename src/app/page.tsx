@@ -23,7 +23,7 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex items-center bg-black">
+      <div className="flex justify-center items-center bg-black">
       <video className="mx-auto min-h-[720px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
         <source src="/video/Battlefield_4_Trailer.mp4" type="video/mp4"/>
       </video>
@@ -41,7 +41,7 @@ export default function Home() {
       }}
       />
       </div>
-      <div className="flex items-stretch">
+      <div className="ninety flex items-stretch">
         <div className="ml-4 m-10">
           <InstagramEmbed/>
         </div>

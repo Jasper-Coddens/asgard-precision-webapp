@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-<nav>
+<nav className='ninety'>
   <div className="flex flex-wrap items-center justify-between mx-auto p-4">
     <a href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
       <img src="/image/asgard_logo.png" className="ml-4 h-20" alt="Asgard Precision Logo" />

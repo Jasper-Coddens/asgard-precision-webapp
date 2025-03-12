@@ -13,12 +13,15 @@
 :root {
   --background: #1e1f22;
   --foreground: #ffffff;
-  width: 90%;
-  margin: 0 auto;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: 'metropolis', sans-serif;
+}
+
+.ninety {
+  max-width: 90%;
+  margin: 0 auto;
 }
