@@ -27,11 +27,6 @@ export default function Home() {
         <video className="mx-auto min-h-[720px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
           <source src="/video/Battlefield_4_Trailer.mp4" type="video/mp4"/>
         </video>
-        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center">
-          <p className="text-white text-3xl font-bold px-4 py-2">
-            Asgard Precision<br/>In Good Company
-          </p>
-        </div>
         <img 
         id="playButton" alt="play button" src="/image/next-button-svgrepo-com.svg" 
         onClick={togglePlay}
