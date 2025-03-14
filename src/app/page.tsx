@@ -24,22 +24,27 @@ export default function Home() {
   return (
     <div>
       <div className="flex justify-center items-center bg-black">
-      <video className="mx-auto min-h-[720px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
-        <source src="/video/Battlefield_4_Trailer.mp4" type="video/mp4"/>
-      </video>
-      <img 
-      id="playButton" alt="play button" src="/image/next-button-svgrepo-com.svg" 
-      onClick={togglePlay}
-      className="opacity-60"
-      style={{
-        display: showPlayButton ? "block" : "none",
-        position: "absolute",
-        justifySelf: "anchor-center",
-        cursor: "pointer",
-        width: "50px",
-        height: "50px",
-      }}
-      />
+        <video className="mx-auto min-h-[720px]" autoPlay muted loop id="myVideo" onClick={togglePlay} ref={videoElement}>
+          <source src="/video/Battlefield_4_Trailer.mp4" type="video/mp4"/>
+        </video>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center">
+          <p className="text-white text-3xl font-bold px-4 py-2">
+            Asgard Precision<br/>In Good Company
+          </p>
+        </div>
+        <img 
+        id="playButton" alt="play button" src="/image/next-button-svgrepo-com.svg" 
+        onClick={togglePlay}
+        className="opacity-60"
+        style={{
+          display: showPlayButton ? "block" : "none",
+          position: "absolute",
+          justifySelf: "anchor-center",
+          cursor: "pointer",
+          width: "50px",
+          height: "50px",
+        }}
+        />
       </div>
       <div className="ninety flex items-stretch">
         <div className="ml-4 m-10">
