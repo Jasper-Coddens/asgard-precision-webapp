@@ -108,6 +108,17 @@ export default function Event() {
             </form>
           </div>
         </li>
+        <li className='bg-white text-black rounded-md p-4 flex justify-between items-start'>
+          <div className='flex-1'>
+            <h3 className='text-3xl'>Event for shooting in classified</h3>
+            <p className='m-3'>DESCRIPTION: This is an event organized by one of our partners.</p>
+            <p className='m-3'>DATE: 15/03/2025</p>
+            <p className='m-3'>LOCATION: Europe</p>
+          </div>
+          <div className='w-96 mx-6 my-auto'>
+            <a className='md:hover:text-asgard-blue md:hover:bg-white rounded-md bg-asgard-blue py-3 px-8 text-base font-semibold text-white outline-none transition duration-300' href='http://www.crimi-events.com/Nuketown-XL'>Link to partner</a>
+          </div>
+        </li>
       </ul>
     </>
     );

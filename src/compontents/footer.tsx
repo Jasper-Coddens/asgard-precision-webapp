@@ -17,7 +17,7 @@ const Footer = () => {
                 </address>
               </div>
               <div className="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
-                <button className="px-4 py-2 bg-asgard-red hover:bg-asgard-blue transition duration-500 rounded text-white">Contact</button>
+                <a href="/contact" className="font-semibold px-4 py-2 bg-asgard-blue hover:bg-white hover:text-asgard-blue transition duration-500 rounded text-white">CONTACT</a>
               </div>
             </div>
           </div>
